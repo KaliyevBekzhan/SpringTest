@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Button Click Example</title>
+</head>
+<body>
+    <button onclick="redirectToOtherController()">Go to Other Controller</button>
+
+    <script>
+        function redirectToOtherController() {
+            // Отправляем AJAX запрос на другой URL
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/hello", true);
+            xhr.onload = function() {
+                // При успешном ответе перенаправляем на другую страницу
+                window.location.href = "/hello";
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
