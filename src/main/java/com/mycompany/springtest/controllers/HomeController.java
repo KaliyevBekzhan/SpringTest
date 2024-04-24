@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author rekal
  */
 @Controller
-public class MyController {
+public class HomeController {
     
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String page() {
-        return "hello";
+        return "index";
     }
     
 }

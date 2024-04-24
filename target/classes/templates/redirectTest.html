@@ -8,19 +8,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <title>Button Click Example</title>
 </head>
 <body>
-    <button onclick="redirectToOtherController()">Go to Other Controller</button>
-
-    <script>
-        function redirectToOtherController() {
-            // Отправляем AJAX запрос на другой URL
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/hello", true);
-            xhr.onload = function() {
-                // При успешном ответе перенаправляем на другую страницу
-                window.location.href = "/hello";
-            };
-            xhr.send();
-        }
-    </script>
+    <a th:href="@{/hello}">Go to Other Controller</a>
 </body>
 </html>
