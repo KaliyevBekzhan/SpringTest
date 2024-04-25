@@ -1,8 +1,15 @@
 {
-    "elements": {},
+    "elements": {
+        "th:block": {}
+    },
     "attributes": {
+        "th:include": {},
         "th:src": {
             "context": "img"
+        },
+        "th:insert": {},
+        "th:replace": {
+            "context": "div"
         },
         "th:href": {
             "context": "a"
